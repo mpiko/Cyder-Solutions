@@ -9,7 +9,6 @@ Extends fleet to add travel information
     'website': 'www.cyder.com.au',
     'depends': ['fleet'],
     'data': [
-        'security/ir.model.access.csv',
         'views/trips.xml'
     ],
     'installable': True,

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+    <!-- Task Form view -->
+    <record id="sh_project_task_inherited_view_form" model="ir.ui.view">
+        <field name="name">sh.project.task.inherit.view.form</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2" />
+        <field name="arch" type="xml">
+            <xpath expr="//header//button[@name='action_assign_to_me']" position="after">
+                <button name="%(sh_project_task_issue_management.sh_issue_wizard_action)d" string="Create Issue" type="action" class="oe_highlight" />
+            </xpath>
+            <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+                <button class="oe_stat_button" type="object" name="get_issues" icon="fa-bug">
+                    <field string="Issues" name="sh_issue_count" widget="statinfo" />
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Task Kanban View -->
+    <record id="sh_project_task_inherited_view_kanban" model="ir.ui.view">
+        <field name="name">project.task.inherit.view.kanban</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_kanban" />
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="sh_task_issue_count" />
+            </field>
+            <xpath expr="//div[hasclass('o_kanban_record_bottom')]" position="after">
+                <div class="o_kanban_record_bottom mt-3">
+                    <div class="o_project_kanban_boxes">
+                        <a class="o_project_kanban_box" name="get_issues" type="object">
+                            <div>
+                                <span class="o_value">
+                                    <t t-esc="record.sh_task_issue_count.value" />
+                                    Issues
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    
+</odoo>

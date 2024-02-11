@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.cs_vehicle_log.user,access_cs_vehicle_log.user,cs_vehicle_log.model_cs_vehicle_log_cs_vehicle_log,group_cs_vehicle_log_user,1,1,0,0
+access.cs_vehicle_log.vehicles.user,access_cs_vehicle_log.vehicles.user,cs_vehicle_log.model_cs_vehicle_log_vehicles,group_cs_vehicle_log_user,1,1,0,0
+access.vehicle.history.lines.admin,access_vehicle.history.lines.admin,cs_vehicle_log.model_vehicle_history_lines,group_cs_vehicle_log_user,1,1,0,0
+
+access.cs_vehicle_log.admin,access_cs_vehicle_log.admin,cs_vehicle_log.model_cs_vehicle_log_cs_vehicle_log,group_cs_vehicle_log_manager,1,1,1,1
+access.cs_vehicle_log.vehicles.admin,access_cs_vehicle_log.vehicles.admin,cs_vehicle_log.model_cs_vehicle_log_vehicles,group_cs_vehicle_log_manager,1,1,1,1
+access.vehicle.history.lines.admin,access_vehicle.history.lines.admin,cs_vehicle_log.model_vehicle_history_lines,group_cs_vehicle_log_manager,1,1,1,1

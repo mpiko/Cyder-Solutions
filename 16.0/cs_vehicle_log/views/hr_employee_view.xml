@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="cs_hr_employee_public_form_view_inherit" model="ir.ui.view">
+        <field name="name">cs.hr.employee.public.leave.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="mode">extension</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='work_email']" position="after">
+                <field name="preferred_vehicle"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_cs_vehicle_log_tree" model="ir.ui.view">
+        <field name="name">cs_vehicle_log.cs_vehicle_log.tree</field>
+        <field name="model">cs_vehicle_log.cs_vehicle_log</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="ref" readonly="1" optional="hide"/>
+                <field name="vehicle"/>
+                <field name="name" optional="hide"/>
+                <field name="trip_business"/>
+                <field name="trip_purpose"/>
+                <field name="date_start"/>
+                <field name="date_end"/>
+                <field name="od_start"/>
+                <field name="od_end"/>
+                <field name="distance"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_cs_vehicle_log_form" model="ir.ui.view">
+        <field name="name">cs_vehicle_log.cs_vehicle_log.form</field>
+        <field name="model">cs_vehicle_log.cs_vehicle_log</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="ref" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="vehicle"/>
+                            <field name="trip_business"/>
+                        </group>
+                        <group>
+                            <field name="date_start"/>
+                            <field name="date_end"/>
+                            <button name="set_end_to_now" string="Now" type="object" class="oe_highlight" span="2"/>
+                            <br/>
+                            <field name="od_start"/>
+                            <field name="od_end"/>
+                            <field name="distance"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="trip_purpose"/>
+                    </group>
+
+                    <!--                    <notebook>-->
+                    <!--                        <page string="Page 1" name="page1">-->
+                    <!--                             -->
+                    <!--                        </page>-->
+                    <!--                        <page string="Page 2" name="page2">-->
+                    <!--                        </page>-->
+
+                    <!--                    </notebook>-->
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_cs_vehicle_log_cs_vehicle_log_search" model="ir.ui.view">
+        <field name="name">cs_vehicle_log.cs_vehicle_log.search</field>
+        <field name="model">cs_vehicle_log.cs_vehicle_log</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ref"/>
+                <filter
+                        string="Business"
+                        name="filter_is_business"
+                        domain="[('trip_business','=',True)]"
+                    />
+                <field name="vehicle"/>
+                <filter name="group_by_vehicle" context="{'group_by': 'vehicle'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_cs_vehicle_log_cs_vehicle_log_view" model="ir.actions.act_window">
+        <field name="name">Log</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cs_vehicle_log.cs_vehicle_log</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+
+            <p class="'o_view_nocontent_smiling_face">
+                Create your vehicle log !
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+            id="menu_cs_vehicle_log_main"
+            name="Log"
+            action="action_cs_vehicle_log_cs_vehicle_log_view"
+            parent="menu_cs_vehicle_log_root"
+            sequence="10"/>
+</odoo>

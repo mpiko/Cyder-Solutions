@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="cs_vehicle_log.cs_vehicle_log_usage_report_details">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <t t-set="rec_count" t-value="0"/>
+                <t t-set="rep_vehicle" t-value="NONE"/>
+                <t t-esc="rep_vehicle"/>
+                <t t-foreach="docs" t-as="o">
+                    <div class="oe_structure"/>
+                    <div class="page">
+<!--                    <t t-if=\"rep_vehicle &lt;= rep_od_start\">-->
+<!--                    <t t-esc="rep_vehicle"/>-->
+<!--                    <t t-if="rep_vehicle == 'NONE'">-->
+<!--                        DOIN IT-->
+<!--                        <t t-set="rep_vehicle" t-value="o.vehicle"/>-->
+<!--                    </t>-->
+
+<!--                    <t t-set="rec_count" t-value="rec_count + 1"/>-->
+
+
+                        <h1>Usage Report</h1>
+                        Registration: <b><span t-field="o.vehicle"/></b> <br/>
+                        Make: <span t-field="o.vehicle.veh_make"/> <br/>
+                        Model: <span t-field="o.vehicle.veh_model"/> <br/>
+                        Capacity: <span t-field="o.vehicle.veh_capacity"/> <br/>
+<!--                        Capacity: <span t-esc="rep_vehicle"/> <br/>-->
+                        <hr/>
+
+                        <span t-field="o.od_start"/><br/>
+                        <span t-field="o.od_end"/><br/>
+                        <span t-esc="rec_count"/><br/>
+
+                        <table class="table table-condensed">
+                          <!--  <tr>
+                                <td>
+                                    Client
+                                </td>
+                                <td>
+                                    <span t-field="o.client"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Equipment Category
+                                </td>
+                                <td>
+                                    <span t-field="o.category_id"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Manufacturer
+                                </td>
+                                <td>
+                                    <span t-field="o.manufacturer_id"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Reference
+                                </td>
+                                <td>
+                                    <span t-field="o.ref"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Model
+                                </td>
+                                <td>
+                                    <span t-field="o.model"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Serial No
+                                </td>
+                                <td>
+                                    <span t-field="o.serial_no"/>
+                                </td>
+                            </tr>
+                            -->
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

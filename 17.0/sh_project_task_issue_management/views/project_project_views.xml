@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- project Form view -->
+    <record id="sh_project_project_inherited_view_form" model="ir.ui.view">
+        <field name="name">sh.project.project.inherit.view.form</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet//div[1]//button[2]" position="after">
+                <button class="oe_stat_button" type="object" name="get_issues" icon="fa-bug">
+                    <field string="Issues" name="sh_issue_count" widget="statinfo" />
+                </button>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button name="%(sh_project_task_issue_management.sh_issue_project_wizard_action)d" string="Create Issue" type="action" class="oe_highlight" />
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Project Kanban view -->
+    <record id="sh_project_project_inherited_view_kanban" model="ir.ui.view">
+        <field name="name">sh.project.project.inherit.view.kanban</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project_kanban" />
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="sh_project_issue_count" />
+            </field>
+            <xpath expr="//div[hasclass('oe_kanban_bottom_left')]" position="after">
+                <div class="o_project_kanban_boxes">
+                    <a class="o_project_kanban_box" name="get_issues" type="object">
+                        <div>
+                            <span class="o_value">
+                                <t t-esc="record.sh_project_issue_count.value" />
+                                Issues
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

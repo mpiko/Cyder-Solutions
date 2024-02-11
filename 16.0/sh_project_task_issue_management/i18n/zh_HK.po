@@ -1,0 +1,730 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_project_task_issue_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-02 13:10+0000\n"
+"PO-Revision-Date: 2022-09-02 13:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "<small class=\"text-right\">Stage:</small>"
+msgstr "<small class = \“ text-right \”>階段：</small>"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "<strong>Additional Comment</strong>"
+msgstr "<strong>其他評論</strong>"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "<strong>Assigned To</strong>"
+msgstr "<strong>分配給</strong>"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "<strong>Date:</strong>"
+msgstr "<strong>日期：</strong>"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "<strong>Description</strong>"
+msgstr "<strong>描述</strong>"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid ""
+"<strong>Issue Type :</strong>\n"
+"                            <br/>"
+msgstr ""
+"<strong>問題類型：</strong>\n"
+"                            <br/>"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "<strong>Message and communication history</strong>"
+msgstr "<strong>消息和溝通歷史</strong>"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "<strong>Project:</strong>"
+msgstr "<strong>項目：</strong>"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "<strong>Reported By</strong>"
+msgstr "<strong> </strong>報導"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid ""
+"<strong>Task :</strong>\n"
+"                            <br/>"
+msgstr ""
+"<strong>任務 ：</strong>\n"
+"                            <br/>"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__access_warning
+msgid "Access warning"
+msgstr "訪問警告"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_needaction
+msgid "Action Needed"
+msgstr "需要採取行動"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__activity_ids
+msgid "Activities"
+msgstr "活動"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "活動異常裝飾"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__activity_state
+msgid "Activity State"
+msgstr "活動狀態"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "活動類型圖標"
+
+#. module: sh_project_task_issue_management
+#. openerp-web
+#: code:addons/sh_project_task_issue_management/static/src/xml/sh_issue_wizard_template.xml:0
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__sh_additional_comment
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__sh_additional_comment
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__sh_additional_comment
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_project_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_wizard_view_form
+#, python-format
+msgid "Additional Comment"
+msgstr "其他評論"
+
+#. module: sh_project_task_issue_management
+#: model:res.groups,name:sh_project_task_issue_management.issue_group_manager
+msgid "Administrator"
+msgstr "行政人員"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#, python-format
+msgid "All"
+msgstr "全部"
+
+#. module: sh_project_task_issue_management
+#: model:ir.ui.menu,name:sh_project_task_issue_management.sh_issue_menu
+msgid "All Issues"
+msgstr "所有問題"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__sh_user_ids
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__sh_user_ids
+msgid "Assignees"
+msgstr "受讓人"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_attachment_count
+msgid "Attachment Count"
+msgstr "依戀數"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__campaign_id
+msgid "Campaign"
+msgstr "活動"
+
+#. module: sh_project_task_issue_management
+#. openerp-web
+#: code:addons/sh_project_task_issue_management/static/src/js/sh_issue.js:0
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_project_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_wizard_view_form
+#, python-format
+msgid "Cancel"
+msgstr "取消"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model,name:sh_project_task_issue_management.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__sh_company_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__sh_company_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__sh_company_id
+msgid "Company"
+msgstr "公司"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model,name:sh_project_task_issue_management.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置設置"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "Contact"
+msgstr "接觸"
+
+#. module: sh_project_task_issue_management
+#. openerp-web
+#: code:addons/sh_project_task_issue_management/static/src/js/sh_issue.js:0
+#: code:addons/sh_project_task_issue_management/static/src/js/sh_issue.js:0
+#: model:ir.actions.act_window,name:sh_project_task_issue_management.sh_issue_project_wizard_action
+#: model:ir.actions.act_window,name:sh_project_task_issue_management.sh_issue_wizard_action
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.create_issue_template
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_project_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_project_project_inherited_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_project_task_inherited_view_form
+#, python-format
+msgid "Create Issue"
+msgstr "創建問題"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__create_uid
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_stages__create_uid
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_type__create_uid
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__create_uid
+msgid "Created by"
+msgstr "由...製作"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__create_date
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__create_date
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_stages__create_date
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_type__create_date
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__create_date
+msgid "Created on"
+msgstr "創建於"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_issues_list
+msgid "Current project of the issue"
+msgstr "目前的問題"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_issues_list
+msgid "Current stage of the task"
+msgstr "任務的當前階段"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issue
+msgid "Current stage of this issue"
+msgstr "這個問題的當前階段"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__sh_partner_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__sh_partner_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__sh_partner_id
+msgid "Customer"
+msgstr "顧客"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__access_url
+msgid "Customer Portal URL"
+msgstr "客戶門戶網址"
+
+#. module: sh_project_task_issue_management
+#. openerp-web
+#: code:addons/sh_project_task_issue_management/static/src/xml/sh_issue_wizard_template.xml:0
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__sh_description
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__sh_description
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_type__sh_description
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__sh_description
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_project_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_type_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_wizard_view_form
+#, python-format
+msgid "Description"
+msgstr "描述"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__display_name
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__display_name
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_stages__display_name
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_type__display_name
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_follower_ids
+msgid "Followers"
+msgstr "追隨者"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "追隨者（合作夥伴）"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "字體很棒的圖標，例如FA任務"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__has_message
+msgid "Has Message"
+msgstr "有消息"
+
+#. module: sh_project_task_issue_management
+#: model:ir.module.category,description:sh_project_task_issue_management.module_project_task_issue_category
+msgid "Helps you manage your Issues"
+msgstr "幫助您管理問題"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_stages__id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_type__id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__activity_exception_icon
+msgid "Icon"
+msgstr "圖標"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "圖標表示異常活動。"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__message_needaction
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "如果已檢查，新消息需要您的注意。"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__message_has_error
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "如果已檢查，有些消息會出現遞送錯誤。"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_is_follower
+msgid "Is Follower"
+msgstr "是追隨者"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model,name:sh_project_task_issue_management.model_sh_issue
+#: model:ir.module.category,name:sh_project_task_issue_management.module_project_task_issue_category
+msgid "Issue"
+msgstr "問題"
+
+#. module: sh_project_task_issue_management
+#. openerp-web
+#: code:addons/sh_project_task_issue_management/static/src/xml/sh_issue_wizard_template.xml:0
+#, python-format
+msgid ""
+"Issue\n"
+"                                        Title"
+msgstr ""
+"問題\n"
+"                                        標題"
+
+#. module: sh_project_task_issue_management
+#. openerp-web
+#: code:addons/sh_project_task_issue_management/static/src/xml/sh_issue_wizard_template.xml:0
+#, python-format
+msgid ""
+"Issue\n"
+"                                        Type"
+msgstr ""
+"問題\n"
+"                                        類型"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_project_project__sh_issue_count
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_project_task__sh_issue_count
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_project_task__sh_task_issue_count
+msgid "Issue Count"
+msgstr "問題計數"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model,name:sh_project_task_issue_management.model_sh_issue_project_wizard
+msgid "Issue Project Wizard"
+msgstr "發行項目嚮導"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model,name:sh_project_task_issue_management.model_sh_issue_stages
+msgid "Issue Stage"
+msgstr "發行階段"
+
+#. module: sh_project_task_issue_management
+#: model:ir.actions.act_window,name:sh_project_task_issue_management.sh_issue_stage_action
+#: model:ir.ui.menu,name:sh_project_task_issue_management.sh_issue_stage_menu
+msgid "Issue Stages"
+msgstr "發行階段"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_project_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_issue_wizard_view_form
+msgid "Issue Title"
+msgstr "問題標題"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model,name:sh_project_task_issue_management.model_sh_issue_type
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_res_company__sh_issue_type_config_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_res_config_settings__sh_issue_type_config_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__sh_issue_type_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__sh_issue_type_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__sh_issue_type_id
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_project_issue_type_config_setting_view
+msgid "Issue Type"
+msgstr "問題類型"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_project_issue_type_config_setting_view
+msgid "Issue Type Configuration"
+msgstr "問題類型配置"
+
+#. module: sh_project_task_issue_management
+#: model:ir.actions.act_window,name:sh_project_task_issue_management.sh_issue_type_action
+#: model:ir.ui.menu,name:sh_project_task_issue_management.sh_issue_type_menu
+msgid "Issue Types"
+msgstr "問題類型"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model,name:sh_project_task_issue_management.model_sh_issue_wizard
+msgid "Issue Wizard"
+msgstr "問題嚮導"
+
+#. module: sh_project_task_issue_management
+#: model:ir.actions.act_window,name:sh_project_task_issue_management.sh_issue_action
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issues
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_portal_layout
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_portal_my_home
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_project_project_inherited_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_project_project_inherited_view_kanban
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_project_task_inherited_view_form
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.sh_project_task_inherited_view_kanban
+msgid "Issues"
+msgstr "問題"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue____last_update
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard____last_update
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_stages____last_update
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_type____last_update
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard____last_update
+msgid "Last Modified on"
+msgstr "最後修改"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__write_uid
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_stages__write_uid
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_type__write_uid
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__write_uid
+msgid "Last Updated by"
+msgstr "最後更新"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__write_date
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__write_date
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_stages__write_date
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_type__write_date
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__write_date
+msgid "Last Updated on"
+msgstr "最後更新"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "主要附件"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__medium_id
+msgid "Medium"
+msgstr "中等的"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_has_error
+msgid "Message Delivery error"
+msgstr "消息傳遞錯誤"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_ids
+msgid "Messages"
+msgstr "消息"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "我的活動截止日期"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__name
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__name
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_stages__name
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_type__name
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__name
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_issues_list
+msgid "Name"
+msgstr "姓名"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#, python-format
+msgid "Newest"
+msgstr "最新"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "下一個活動截止日期"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__activity_summary
+msgid "Next Activity Summary"
+msgstr "下一個活動摘要"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__activity_type_id
+msgid "Next Activity Type"
+msgstr "下一個活動類型"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#, python-format
+msgid "None"
+msgstr "沒有任何"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_needaction_counter
+msgid "Number of Actions"
+msgstr "動作數量"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_has_error_counter
+msgid "Number of errors"
+msgstr "錯誤數"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "需要操作的消息數量"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "帶交貨錯誤的消息數"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__message_unread_counter
+msgid "Number of unread messages"
+msgstr "未讀消息的數量"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#, python-format
+msgid "Others"
+msgstr "其他"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__access_url
+msgid "Portal Access URL"
+msgstr "門戶訪問URL"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#: model:ir.model,name:sh_project_task_issue_management.model_project_project
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__sh_project_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__sh_project_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__sh_project_id
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_issues_list
+#, python-format
+msgid "Project"
+msgstr "項目"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_project_project__sh_project_issue_count
+msgid "Project Issue Count"
+msgstr "項目問題計數"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__sh_user_id
+msgid "Project Manager"
+msgstr "專案經理"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_issues_list
+msgid "Ref"
+msgstr "參考"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__activity_user_id
+msgid "Responsible User"
+msgstr "負責的用戶"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS交付錯誤"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#, python-format
+msgid "Search in All"
+msgstr "搜索"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#, python-format
+msgid "Search in Project"
+msgstr "搜索項目"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#, python-format
+msgid "Search in Ref"
+msgstr "在參考文獻中搜索"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#, python-format
+msgid "Search in Stages"
+msgstr "分階段搜索"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__access_token
+msgid "Security Token"
+msgstr "安全令牌"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__source_id
+msgid "Source"
+msgstr "資源"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__sh_stage_id
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_issues_list
+#, python-format
+msgid "Stage"
+msgstr "階段"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"狀態0基於活動\ n"
+"逾期：到期日已經傳遞\ n"
+"今天：活動日期今天\ n"
+"計劃：未來活動。"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model,name:sh_project_task_issue_management.model_project_task
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__sh_task_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_project_wizard__sh_task_id
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue_wizard__sh_task_id
+msgid "Task"
+msgstr "任務"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_my_issues
+msgid "There are currently no issues for your account."
+msgstr "當前您的帳戶沒有問題。"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__campaign_id
+msgid ""
+"This is a name that helps you keep track of your different campaign efforts,"
+" e.g. Fall_Drive, Christmas_Special"
+msgstr ""
+"這是一個可以幫助您跟踪不同競選工作的名稱，"
+"例如fall_drive，聖誕節_特殊"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__medium_id
+msgid "This is the method of delivery, e.g. Postcard, Email, or Banner Ad"
+msgstr "這是交付方法，例如明信片，電子郵件或橫幅廣告"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__source_id
+msgid ""
+"This is the source of the link, e.g. Search Engine, another domain, or name "
+"of email list"
+msgstr ""
+"這是鏈接的來源，例如搜索引擎，另一個域或名稱"
+"電子郵件列表"
+
+#. module: sh_project_task_issue_management
+#. openerp-web
+#: code:addons/sh_project_task_issue_management/controllers/portal.py:0
+#: code:addons/sh_project_task_issue_management/static/src/xml/sh_issue_wizard_template.xml:0
+#, python-format
+msgid "Title"
+msgstr "標題"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "記錄的異常活動類型。"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_unread
+msgid "Unread Messages"
+msgstr "未讀消息"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "未讀消息計數器"
+
+#. module: sh_project_task_issue_management
+#: model:res.groups,name:sh_project_task_issue_management.issue_group_user
+msgid "User"
+msgstr "用戶"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,field_description:sh_project_task_issue_management.field_sh_issue__website_message_ids
+msgid "Website Messages"
+msgstr "網站消息"
+
+#. module: sh_project_task_issue_management
+#: model:ir.model.fields,help:sh_project_task_issue_management.field_sh_issue__website_message_ids
+msgid "Website communication history"
+msgstr "網站通信歷史"
+
+#. module: sh_project_task_issue_management
+#: code:addons/sh_project_task_issue_management/models/sh_issue.py:0
+#, python-format
+msgid "You Are Not Allow To Change Stage."
+msgstr "您不允許更改階段。"
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_issues_list
+msgid "for project:"
+msgstr "對於項目："
+
+#. module: sh_project_task_issue_management
+#: model_terms:ir.ui.view,arch_db:sh_project_task_issue_management.portal_issues_list
+msgid "in stage:"
+msgstr "在舞台上："

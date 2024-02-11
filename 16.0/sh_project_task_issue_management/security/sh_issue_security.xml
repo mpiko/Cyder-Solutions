@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.rule" id="issue_manager_all_issue_rule">
+        <field name="name">Issue: Issue manager: see all</field>
+        <field name="model_id" ref="model_sh_issue" />
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4,ref('sh_project_task_issue_management.issue_group_manager'))]" />
+    </record>
+
+    <record model="ir.rule" id="issue_user_rule">
+        <field name="name">Issue : see own issues</field>
+        <field name="model_id" ref="model_sh_issue" />
+        <field name="domain_force">['|','|',
+                        ('message_partner_ids', 'in', [user.partner_id.id]),('sh_partner_id', '=', user.partner_id.id),('sh_user_ids', 'in', user.id)]</field>
+        <field name="groups" eval="[(4, ref('base.group_user'))]" />
+    </record>
+
+    <record model="ir.rule" id="sh_issue_comp_rule">
+        <field name="name">Issue : Multi-Company</field>
+        <field name="model_id" ref="model_sh_issue" />
+        <field name="domain_force">['|',('sh_company_id', '=', False),('sh_company_id', 'in', company_ids)]</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sh_issue_type_view_form" model="ir.ui.view">
+        <field name="name">sh.issue.type.view.form</field>
+        <field name="model">sh.issue.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="description" string="Description">
+                            <field name="sh_description" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sh_issue_type_view_tree" model="ir.ui.view">
+        <field name="name">sh.issue.type.view.tree</field>
+        <field name="model">sh.issue.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="sh_issue_type_action" model="ir.actions.act_window">
+        <field name="name">Issue Types</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sh.issue.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="sh_issue_type_menu" name="Issue Types" action="sh_issue_type_action" parent="project.menu_project_config" groups="sh_project_task_issue_management.issue_group_manager" />
+
+</odoo>

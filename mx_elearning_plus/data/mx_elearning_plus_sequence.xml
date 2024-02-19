@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="seq_mx_elearning_plus_sequence" model="ir.sequence">
+        <field name="name">mx_elearning_plus Sequence</field>
+        <field name="code">mx_elearning_plus.sequence</field>
+        <field name="prefix">MX</field>
+        <field name="padding">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>

@@ -1,6 +1,7 @@
 {
     'name': 'Cyder Travel Log',
-    'version': '1.2',
+    'version': '1.0',
+    'author': 'Cyder Solutions',
     'summary': 'Extends fleet to add travel information',
     'category': 'Productivity',
     'description': """

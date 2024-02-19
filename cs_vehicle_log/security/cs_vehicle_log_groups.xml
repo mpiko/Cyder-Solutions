@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<odoo>
+    <!-- Make a new category   -->
+    <record model="ir.module.category" id="module_cs_vehicle_log_category">
+        <field name="name">Cs_vehicle_log</field>
+        <field name="description">Access to Cs_vehicle_log module</field>
+        <field name="sequence">16</field>
+    </record>
+
+    <!-- Create a user group   -->
+    <record id="group_cs_vehicle_log_user" model="res.groups">
+        <field name="name">Cs_vehicle_log User</field>
+        <field name="category_id" ref="cs_vehicle_log.module_cs_vehicle_log_category"/>
+        <field name="users" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <!-- Create an admin group   -->
+    <record id="group_cs_vehicle_log_manager" model="res.groups">
+        <field name="name">Cs_vehicle_log Administrator</field>
+        <field name="implied_ids" eval="[(4, ref('group_cs_vehicle_log_user'))]"/>
+        <field name="category_id" ref="cs_vehicle_log.module_cs_vehicle_log_category"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+</odoo>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="cs_vehicle_log.cs_vehicle_trip_details">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <h1>Trip Details</h1>
+                    <table class="table table-condensed">
+                        <thead style="display: table-row-group">
+                            <tr>
+                                <th name="th_date_start" class="text-start">Start date</th>
+                                <th name="th_date_end" class="text-start">End date</th>
+                                <th name="th_vehicle" class="text-end">Vehicle</th>
+                                <th name="th_driver_id" class="text-end">Driver</th>
+                                <th name="th_business" class="text-end">
+                                    <span>Business Trip</span>
+                                </th>
+<!--                                <th name="th_tolls"  class="text-end">-->
+<!--                                    <span>Tolls</span>-->
+<!--                                </th>-->
+                                <th name="th_startread" class="text-end">Start Odometer</th>
+                                <th name="th_value" class="text-end">End Odometer</th>
+<!--                                <th name="th_distance" class="text-end">-->
+<!--                                    <span>Distance</span>-->
+<!--                                </th>-->
+                            </tr>
+                        </thead>
+
+                        <tbody class="sale_tbody">
+                            <t t-foreach="docs" t-as="o">
+                                <tr>
+                                    <td name="td_date_start"><span t-field="o.date_start"/></td>
+                                    <td name="td_date_end"><span t-field="o.date_end"/></td>
+
+                                    <td name="td_vehicle" class="text-end">
+                                        <span t-field="o.vehicle"/>
+                                    </td>
+                                    <td name="td_driver_id" class="text-end">
+                                        <span t-field="o.name"/>
+                                    </td>
+                                    <td t-attf-class="['text-end', 'hidden']" t-if="not o.trip_business">
+                                        <span></span>
+                                    </td>
+                                    <td t-attf-class="['text-end']" t-if="o.trip_business">
+                                         <span>&#x2713;</span>
+                                    </td>
+
+<!--                                   <td t-attf-class="['text-end', 'hidden']" t-if="not o.tolls">-->
+<!--                                        <span></span>-->
+<!--                                    </td>-->
+<!--                                    <td t-attf-class="['text-end']" t-if="o.tolls">-->
+<!--                                         <span>&#x2713;</span>-->
+<!--                                    </td>-->
+                                        <td name="td_value" class="text-end">
+                                        <span t-field="o.od_start"/>
+                                    </td>
+
+                                    <td name="td_value" class="text-end">
+                                        <span t-field="o.od_end"/>
+                                    </td>
+<!--                                    <td name="td_distance" class="text-end">-->
+<!--                                        <span t-field="o.distance"/>-->
+<!--                                        <span t-field="o.unit"/>-->
+<!--                                    </td>-->
+                                </tr>
+                            </t>
+<!--                             <t>-->
+<!--                                <td colspan="2">-->
+<!--                                    <strong>Total Distance</strong>-->
+<!--                                </td>-->
+<!--                                <td>-->
+<!--                                    <t t-esc="total_distance"/>-->
+<!--                                </td>-->
+<!--                                </t>-->
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

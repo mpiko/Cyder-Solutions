@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.mx_elearning_plus.user,access_mx_elearning_plus.user,mx_elearning_plus.model_mx_elearning_plus_mx_elearning_plus,group_mx_elearning_plus_user,1,1,0,0
+access.mx_elearning_plus.category.user,access_mx_elearning_plus.category.user,mx_elearning_plus.model_mx_elearning_plus_category,group_mx_elearning_plus_user,1,1,0,0
+
+access.mx_elearning_plus.admin,access_mx_elearning_plus.admin,mx_elearning_plus.model_mx_elearning_plus_mx_elearning_plus,group_mx_elearning_plus_manager,1,1,1,1
+access.mx_elearning_plus.category.admin,access_mx_elearning_plus.category.admin,mx_elearning_plus.model_mx_elearning_plus_category,group_mx_elearning_plus_manager,1,1,1,1
